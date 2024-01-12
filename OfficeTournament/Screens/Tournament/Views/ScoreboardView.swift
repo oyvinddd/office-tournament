@@ -17,5 +17,6 @@ struct ScoreboardView: View {
             
             PlayerRow(player: player)
         }
+        .listStyle(.plain)
     }
 }

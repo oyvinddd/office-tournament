@@ -11,8 +11,8 @@ import SwiftUI
     
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
-            //LogInView(viewModel: LogInViewModel())
+            HomeView()
+            //SignInView(viewModel: SignInViewModel())
         }
     }
 }

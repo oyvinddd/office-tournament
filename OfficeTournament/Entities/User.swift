@@ -13,5 +13,11 @@ struct User: Codable, Identifiable {
     
     var username: String
     
+    var tournamentId: UUID?
+    
+    var score: Int
+    
+    var lastSeen: Date
+    
     var accessToken: String?
 }

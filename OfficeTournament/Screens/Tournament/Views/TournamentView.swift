@@ -15,10 +15,13 @@ struct TournamentView: View {
         
         VStack {
             
-            HeaderView()
+            HeaderView(title: viewModel.title)
+            
             
             ScoreboardView(scoreboard: $viewModel.scoreboard)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.yellow)
     }
 }
 

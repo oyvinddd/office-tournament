@@ -9,11 +9,12 @@ import SwiftUI
 
 struct HeaderView: View {
     
+    var title: String
+    
     var body: some View {
-        Text("Test Tournament")
+        Text(title)
+            .font(Font.App.heading)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.leading, 16)
     }
-}
-
-#Preview {
-    HeaderView()
 }

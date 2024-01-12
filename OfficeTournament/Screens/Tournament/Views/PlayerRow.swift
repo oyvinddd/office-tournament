@@ -15,11 +15,28 @@ struct PlayerRow: View {
         
         HStack {
             
-            Text(player.username)
+            VStack {
+             
+                Text(player.username.lowercased())
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(Font.App.textField)
+                
+                Text("\(player.score)")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(Font.App.textField)
+                    .foregroundStyle(Color.gray)
+            }
+            .padding(.leading, 8)
             
-            Text("\(player.score)")
-                .multilineTextAlignment(.trailing)
+            Spacer()
+            
+            Text("🏆")
+                .padding(.trailing, 8)
         }
+        .frame(maxHeight: .infinity)
+        .listRowBackground(Color.clear)
+        .listRowSeparator(.hidden)
+        .background(Color.white)
     }
 }
 
