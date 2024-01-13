@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ScoreboardView: View {
     
-    @Binding var scoreboard: [Player]
+    @Binding var scoreboard: [User]
     
     var body: some View {
         

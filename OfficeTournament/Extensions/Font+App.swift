@@ -19,6 +19,8 @@ extension Font {
         
         static let button = Font.system(size: 18, weight: .semibold, design: .rounded)
         
+        static let menuButton = Font.system(size: 26, weight: .semibold, design: .rounded)
+        
         static let textField = Font.system(size: 18, weight: .semibold, design: .rounded)
         
         static let progress = Font.system(size: 36, weight: .heavy, design: .rounded)

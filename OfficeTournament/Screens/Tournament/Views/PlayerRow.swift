@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerRow: View {
     
-    var player: Player
+    var player: User
     
     var body: some View {
         
@@ -41,5 +41,5 @@ struct PlayerRow: View {
 }
 
 #Preview {
-    PlayerRow(player: Player(id: UUID(), username: "oyvindhauge", score: 1800))
+    PlayerRow(player: User(id: UUID(), username: "oyvindhauge", score: 1800, lastSeen: Date.now))
 }

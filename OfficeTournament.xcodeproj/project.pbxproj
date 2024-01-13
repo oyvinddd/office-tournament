@@ -23,6 +23,7 @@
 		8EE48C7C2B4EC8E10005FEDD /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE48C7B2B4EC8E10005FEDD /* ServiceFactory.swift */; };
 		8EE48C7E2B4EC99D0005FEDD /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE48C7D2B4EC99D0005FEDD /* Tournament.swift */; };
 		8EE48C802B4ECA600005FEDD /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE48C7F2B4ECA600005FEDD /* Match.swift */; };
+		8EE4F9DA2B519010003135F6 /* ScoreboardModeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE4F9D92B519010003135F6 /* ScoreboardModeRow.swift */; };
 		8EECED372B4D9871006AD079 /* OfficeTournamentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED362B4D9871006AD079 /* OfficeTournamentApp.swift */; };
 		8EECED3B2B4D9872006AD079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EECED3A2B4D9872006AD079 /* Assets.xcassets */; };
 		8EECED3E2B4D9872006AD079 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EECED3D2B4D9872006AD079 /* Preview Assets.xcassets */; };
@@ -31,7 +32,6 @@
 		8EECED4F2B4D9E06006AD079 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED4E2B4D9E06006AD079 /* WelcomeView.swift */; };
 		8EECED512B4D9F7D006AD079 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED502B4D9F7D006AD079 /* ScoreboardView.swift */; };
 		8EECED532B4DA042006AD079 /* TournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED522B4DA042006AD079 /* TournamentViewModel.swift */; };
-		8EECED562B4DA08E006AD079 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED552B4DA08E006AD079 /* Player.swift */; };
 		8EECED582B4DA0C9006AD079 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED572B4DA0C9006AD079 /* User.swift */; };
 		8EECED5A2B4DA12A006AD079 /* TournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED592B4DA12A006AD079 /* TournamentView.swift */; };
 		8EECED5E2B4DA195006AD079 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED5D2B4DA195006AD079 /* HeaderView.swift */; };
@@ -56,6 +56,7 @@
 		8EE48C7B2B4EC8E10005FEDD /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		8EE48C7D2B4EC99D0005FEDD /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
 		8EE48C7F2B4ECA600005FEDD /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		8EE4F9D92B519010003135F6 /* ScoreboardModeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardModeRow.swift; sourceTree = "<group>"; };
 		8EECED332B4D9871006AD079 /* OfficeTournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficeTournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EECED362B4D9871006AD079 /* OfficeTournamentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeTournamentApp.swift; sourceTree = "<group>"; };
 		8EECED3A2B4D9872006AD079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		8EECED4E2B4D9E06006AD079 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8EECED502B4D9F7D006AD079 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		8EECED522B4DA042006AD079 /* TournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewModel.swift; sourceTree = "<group>"; };
-		8EECED552B4DA08E006AD079 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8EECED572B4DA0C9006AD079 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8EECED592B4DA12A006AD079 /* TournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentView.swift; sourceTree = "<group>"; };
 		8EECED5D2B4DA195006AD079 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -219,7 +219,6 @@
 		8EECED542B4DA081006AD079 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8EECED552B4DA08E006AD079 /* Player.swift */,
 				8EECED572B4DA0C9006AD079 /* User.swift */,
 				8EE48C7D2B4EC99D0005FEDD /* Tournament.swift */,
 				8EE48C7F2B4ECA600005FEDD /* Match.swift */,
@@ -233,9 +232,10 @@
 			children = (
 				8EECED5D2B4DA195006AD079 /* HeaderView.swift */,
 				8EECED482B4D9958006AD079 /* LogInView.swift */,
+				8EECED5F2B4DA23C006AD079 /* PlayerRow.swift */,
+				8EE4F9D92B519010003135F6 /* ScoreboardModeRow.swift */,
 				8EECED502B4D9F7D006AD079 /* ScoreboardView.swift */,
 				8EECED592B4DA12A006AD079 /* TournamentView.swift */,
-				8EECED5F2B4DA23C006AD079 /* PlayerRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,10 +339,10 @@
 				8E54C8822B5147FE00C5E70B /* Font+App.swift in Sources */,
 				8EECED5E2B4DA195006AD079 /* HeaderView.swift in Sources */,
 				8EECED582B4DA0C9006AD079 /* User.swift in Sources */,
-				8EECED562B4DA08E006AD079 /* Player.swift in Sources */,
 				8E54C8952B5177A000C5E70B /* CameraView.swift in Sources */,
 				8EF32D762B517F56000EB06C /* MainMenuView.swift in Sources */,
 				8EECED4F2B4D9E06006AD079 /* WelcomeView.swift in Sources */,
+				8EE4F9DA2B519010003135F6 /* ScoreboardModeRow.swift in Sources */,
 				8EECED602B4DA23C006AD079 /* PlayerRow.swift in Sources */,
 				8E54C88D2B51522500C5E70B /* HomeView.swift in Sources */,
 				8EECED512B4D9F7D006AD079 /* ScoreboardView.swift in Sources */,

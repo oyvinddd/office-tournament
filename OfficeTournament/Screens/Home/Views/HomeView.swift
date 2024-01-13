@@ -33,10 +33,15 @@ struct HomeView: View {
             .background(Color.clear)
             .scrollTargetBehavior(.viewAligned)
             .scrollIndicators(.hidden)
+            //.ignoresSafeArea(.all)
             
-            MainMenuView()
-                .padding(.horizontal, 32)
-                .padding(.bottom, 32)
+            VStack {
+                
+                MainMenuView()
+                    .padding(.horizontal, 32)
+                    .padding(.bottom, 32)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
     }
 }
