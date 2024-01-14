@@ -11,9 +11,9 @@ extension Font {
     
     struct App {
         
-        static let heading = Font.system(size: 32, weight: .bold, design: .rounded)
+        static let heading = Font.system(size: 22, weight: .bold, design: .rounded)
         
-        static let headingBig = Font.system(size: 36, weight: .bold, design: .rounded)
+        static let headingBig = Font.system(size: 32, weight: .bold, design: .rounded)
         
         static let subheading = Font.system(size: 18, weight: .bold, design: .rounded)
         

@@ -17,7 +17,7 @@ struct TournamentView: View {
             
             if viewModel.signedIn {
              
-                HeaderView(title: viewModel.tournament.title)
+                HeaderView()
                 
                 ScoreboardView(scoreboard: $viewModel.tournament.scoreboard)
                 

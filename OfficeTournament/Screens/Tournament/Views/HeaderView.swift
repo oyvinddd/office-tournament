@@ -9,13 +9,32 @@ import SwiftUI
 
 struct HeaderView: View {
     
-    var title: String
-    
     var body: some View {
-        Text(title)
-            .font(Font.App.heading)
-            .foregroundStyle(Color.Text.normal)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading, 16)
+        
+        VStack(spacing: 2) {
+            
+            Text("Tournament".uppercased())
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(Font.system(size: 12, weight: .bold, design: .rounded))
+                .foregroundStyle(Color.Text.subtitle)
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
+            
+            Text("Tietoevry table tennis")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(Font.App.heading)
+                .foregroundStyle(Color.Text.normal)
+                .padding(.horizontal, 16)
+            
+            // Player info part:
+            
+            HStack {
+                
+                
+            }
+        }
+        .background(Color.white)
+        .padding(.horizontal, 16)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }

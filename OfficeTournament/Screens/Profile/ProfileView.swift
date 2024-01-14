@@ -19,6 +19,7 @@ struct ProfileView: View {
                 .font(Font.system(size: 120))
                 .background(Color.white)
                 .padding(.all, 16)
+                .shadow(color: Color.gray, radius: 12, x: 0, y: 0)
                 //.clipShape(RoundedRectangle(cornerRadius: 8))
             
             Text("Hi, \(viewModel.username)!")
@@ -31,7 +32,7 @@ struct ProfileView: View {
                 
                 Button(action: {}) {
                     
-                    HStack {
+                    HStack(spacing: 16) {
                         
                         Image(systemName: "hockey.puck")
                             .foregroundStyle(Color.Text.normal)

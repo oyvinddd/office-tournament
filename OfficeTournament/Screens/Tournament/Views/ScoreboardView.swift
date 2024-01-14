@@ -10,6 +10,7 @@ import SwiftUI
 struct ScoreboardView: View {
     
     @Binding var scoreboard: [User]
+    @State private var selectedPlayer: User?
     
     var body: some View {
         
@@ -26,5 +27,8 @@ struct ScoreboardView: View {
             }
         }
         .listStyle(.plain)
+        .refreshable {
+            print("Do your refresh work here")
+        }
     }
 }

@@ -15,7 +15,7 @@ struct PlayerRow: View {
         
         HStack {
             
-            VStack {
+            VStack(spacing: 4) {
              
                 Text(player.username.lowercased())
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -27,7 +27,7 @@ struct PlayerRow: View {
                     .font(Font.App.textField)
                     .foregroundStyle(Color.Text.subtitle)
             }
-            .padding(.leading, 8)
+            .padding(.leading, 16)
             
             Spacer()
             
