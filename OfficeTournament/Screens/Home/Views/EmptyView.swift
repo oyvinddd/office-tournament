@@ -13,8 +13,8 @@ struct EmptyView: View {
         ZStack {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.red)
-        .opacity(0.5)
+        .background(Color.clear)
+        //.opacity(0.5)
     }
 }
 

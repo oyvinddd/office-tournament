@@ -13,9 +13,17 @@ struct ScoreboardView: View {
     
     var body: some View {
         
-        List(scoreboard, id: \.id) { player in
+        List {
             
-            PlayerRow(player: player)
+            Section {
+                ScoreboardModeRow(mode: .scoreboard)
+            }
+            
+            Section {
+                ForEach(scoreboard.indices, id: \.self) { index in
+                    PlayerRow(player: scoreboard[index])
+                }
+            }
         }
         .listStyle(.plain)
     }

@@ -14,6 +14,7 @@ struct HeaderView: View {
     var body: some View {
         Text(title)
             .font(Font.App.heading)
+            .foregroundStyle(Color.Text.normal)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 16)
     }

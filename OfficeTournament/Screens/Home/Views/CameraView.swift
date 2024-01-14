@@ -16,6 +16,6 @@ struct CameraView: View {
                 .font(.title.bold())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.purple)
+        .background(Color.black)
     }
 }

@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-enum Page: Int {
+enum AppPage: Int {
     case camera, tournament, profile
 }
 
 struct MainMenuView: View {
     
-    @State var currentPage: Page = .tournament
+    @State var currentPage: AppPage = .tournament
     
     private let feedback = UIImpactFeedbackGenerator(style: .medium)
     
@@ -22,16 +22,16 @@ struct MainMenuView: View {
         HStack(spacing: 0) {
             
             Button(action: cameraButtonTapped) {
-                Image(systemName: "eraser")
+                Image(systemName: "qrcode.viewfinder")
                     .padding(.leading, 24)
-                    .padding(.trailing, 16)
+                    .padding(.trailing, 20)
                     .padding(.vertical, 12)
             }
             .font(Font.App.menuButton)
             .foregroundStyle(Color.black)
             
             Button(action: tournamentButtonTapped) {
-                Image(systemName: "eraser")
+                Image(systemName: "trophy")
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
             }
@@ -39,8 +39,8 @@ struct MainMenuView: View {
             .foregroundStyle(Color.black)
             
             Button(action: profileButtonTapped) {
-                Image(systemName: "eraser")
-                    .padding(.leading, 16)
+                Image(systemName: "person.crop.circle")
+                    .padding(.leading, 20)
                     .padding(.trailing, 24)
                     .padding(.vertical, 12)
             }
@@ -49,6 +49,7 @@ struct MainMenuView: View {
         }
         .background(Color.white)
         .clipShape(Capsule())
+        .shadow(color: Color.gray, radius: 12, x: 0, y: 0)
     }
     
     private func cameraButtonTapped() {

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2F75B92B545CA100ED79C5 /* CreateTournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */; };
+		8E2F75BB2B545DE400ED79C5 /* CreateTournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */; };
+		8E3B702C2B53EF590036F82C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */; };
+		8E3B702E2B543D110036F82C /* InvitationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702D2B543D110036F82C /* InvitationListView.swift */; };
+		8E3B70302B543E680036F82C /* InvitationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */; };
+		8E3B70322B544A450036F82C /* InviteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70312B544A450036F82C /* InviteRow.swift */; };
+		8E3B70352B544B3D0036F82C /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70342B544B3D0036F82C /* LocalStorageManager.swift */; };
+		8E3B70372B5451AF0036F82C /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70362B5451AF0036F82C /* Color+App.swift */; };
 		8E54C87C2B5138C400C5E70B /* Invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C87B2B5138C400C5E70B /* Invite.swift */; };
 		8E54C87E2B5144B700C5E70B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C87D2B5144B700C5E70B /* APIClient.swift */; };
 		8E54C8802B5145A600C5E70B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C87F2B5145A600C5E70B /* SignInView.swift */; };
@@ -40,6 +48,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTournamentView.swift; sourceTree = "<group>"; };
+		8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTournamentViewModel.swift; sourceTree = "<group>"; };
+		8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		8E3B702D2B543D110036F82C /* InvitationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationListView.swift; sourceTree = "<group>"; };
+		8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationListViewModel.swift; sourceTree = "<group>"; };
+		8E3B70312B544A450036F82C /* InviteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRow.swift; sourceTree = "<group>"; };
+		8E3B70342B544B3D0036F82C /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		8E3B70362B5451AF0036F82C /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
 		8E54C87B2B5138C400C5E70B /* Invite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
 		8E54C87D2B5144B700C5E70B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		8E54C87F2B5145A600C5E70B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -84,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E3B70292B53EF3A0036F82C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8E54C88F2B5152D700C5E70B /* ProfileView.swift */,
+				8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8E3B70332B544B290036F82C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E3B70342B544B3D0036F82C /* LocalStorageManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8E54C8832B51484400C5E70B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +147,6 @@
 			children = (
 				8E54C8942B5177A000C5E70B /* CameraView.swift */,
 				8E54C88C2B51522500C5E70B /* HomeView.swift */,
-				8E54C88F2B5152D700C5E70B /* ProfileView.swift */,
 				8E54C8912B51737F00C5E70B /* EmptyView.swift */,
 				8EF32D752B517F56000EB06C /* MainMenuView.swift */,
 			);
@@ -149,6 +181,7 @@
 		8EECED352B4D9871006AD079 /* OfficeTournament */ = {
 			isa = PBXGroup;
 			children = (
+				8E3B70332B544B290036F82C /* Utils */,
 				8EECED542B4DA081006AD079 /* Entities */,
 				8EECED4D2B4D9C41006AD079 /* Extensions */,
 				8EECED452B4D988C006AD079 /* Services */,
@@ -171,6 +204,7 @@
 		8EECED442B4D9883006AD079 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8E3B70292B53EF3A0036F82C /* Profile */,
 				8E54C88B2B5151F600C5E70B /* Home */,
 				8E54C8832B51484400C5E70B /* Shared */,
 				8E54C8882B514D7700C5E70B /* SignIn */,
@@ -212,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				8E54C8812B5147FE00C5E70B /* Font+App.swift */,
+				8E3B70362B5451AF0036F82C /* Color+App.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,6 +271,9 @@
 				8EE4F9D92B519010003135F6 /* ScoreboardModeRow.swift */,
 				8EECED502B4D9F7D006AD079 /* ScoreboardView.swift */,
 				8EECED592B4DA12A006AD079 /* TournamentView.swift */,
+				8E3B702D2B543D110036F82C /* InvitationListView.swift */,
+				8E3B70312B544A450036F82C /* InviteRow.swift */,
+				8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +283,8 @@
 			children = (
 				8EECED522B4DA042006AD079 /* TournamentViewModel.swift */,
 				8EECED4B2B4D9BFA006AD079 /* LogInViewModel.swift */,
+				8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */,
+				8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -321,12 +361,16 @@
 			files = (
 				8EC9C7F62B4ED2A000634773 /* RequestFactory.swift in Sources */,
 				8EE48C7E2B4EC99D0005FEDD /* Tournament.swift in Sources */,
+				8E3B702C2B53EF590036F82C /* ProfileViewModel.swift in Sources */,
 				8EE48C7A2B4EC88A0005FEDD /* TournamentService.swift in Sources */,
 				8EECED372B4D9871006AD079 /* OfficeTournamentApp.swift in Sources */,
 				8E54C88A2B514D8500C5E70B /* SignInViewModel.swift in Sources */,
 				8EECED4C2B4D9BFA006AD079 /* LogInViewModel.swift in Sources */,
+				8E2F75BB2B545DE400ED79C5 /* CreateTournamentViewModel.swift in Sources */,
+				8E3B70372B5451AF0036F82C /* Color+App.swift in Sources */,
 				8EECED5A2B4DA12A006AD079 /* TournamentView.swift in Sources */,
 				8E54C8902B5152D700C5E70B /* ProfileView.swift in Sources */,
+				8E2F75B92B545CA100ED79C5 /* CreateTournamentView.swift in Sources */,
 				8E54C8872B514CCA00C5E70B /* UserService.swift in Sources */,
 				8E54C8852B51485100C5E70B /* ButtonStyle.swift in Sources */,
 				8EECED492B4D9958006AD079 /* LogInView.swift in Sources */,
@@ -335,15 +379,19 @@
 				8EE48C802B4ECA600005FEDD /* Match.swift in Sources */,
 				8E54C8922B51737F00C5E70B /* EmptyView.swift in Sources */,
 				8E54C8802B5145A600C5E70B /* SignInView.swift in Sources */,
+				8E3B70322B544A450036F82C /* InviteRow.swift in Sources */,
 				8E54C87C2B5138C400C5E70B /* Invite.swift in Sources */,
 				8E54C8822B5147FE00C5E70B /* Font+App.swift in Sources */,
 				8EECED5E2B4DA195006AD079 /* HeaderView.swift in Sources */,
 				8EECED582B4DA0C9006AD079 /* User.swift in Sources */,
 				8E54C8952B5177A000C5E70B /* CameraView.swift in Sources */,
 				8EF32D762B517F56000EB06C /* MainMenuView.swift in Sources */,
+				8E3B70352B544B3D0036F82C /* LocalStorageManager.swift in Sources */,
 				8EECED4F2B4D9E06006AD079 /* WelcomeView.swift in Sources */,
 				8EE4F9DA2B519010003135F6 /* ScoreboardModeRow.swift in Sources */,
+				8E3B70302B543E680036F82C /* InvitationListViewModel.swift in Sources */,
 				8EECED602B4DA23C006AD079 /* PlayerRow.swift in Sources */,
+				8E3B702E2B543D110036F82C /* InvitationListView.swift in Sources */,
 				8E54C88D2B51522500C5E70B /* HomeView.swift in Sources */,
 				8EECED512B4D9F7D006AD079 /* ScoreboardView.swift in Sources */,
 				8E54C87E2B5144B700C5E70B /* APIClient.swift in Sources */,

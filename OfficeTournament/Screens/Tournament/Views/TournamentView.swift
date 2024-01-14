@@ -15,12 +15,19 @@ struct TournamentView: View {
         
         VStack {
             
-            HeaderView(title: viewModel.tournament.title)
-            
-            ScoreboardView(scoreboard: $viewModel.tournament.scoreboard)
+            if viewModel.signedIn {
+             
+                HeaderView(title: viewModel.tournament.title)
+                
+                ScoreboardView(scoreboard: $viewModel.tournament.scoreboard)
+                
+            } else {
+                
+                InvitationListView(viewModel: InvitationListViewModel())
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.yellow)
+        .background(Color.General.background)
     }
 }
 

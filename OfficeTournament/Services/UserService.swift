@@ -19,10 +19,20 @@ extension UserServiceInjectable {
 
 protocol UserService {
     
+    var user: User? { get }
+    
+    func signedIn() -> Bool
+    
     func signInUsingApple() async throws -> User
 }
 
 struct LiveUserService: UserService {
+    
+    var user: User? = LocalStorageManager.loadUser()
+    
+    func signedIn() -> Bool {
+        return user?.accessToken != nil
+    }
     
     func signInUsingApple() async throws -> User {
         fatalError()

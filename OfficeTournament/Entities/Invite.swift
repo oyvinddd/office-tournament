@@ -11,7 +11,5 @@ struct Invite: Codable {
     
     var id: UUID
     
-    var tournamentId: UUID
-    
-    var inviteeId: UUID
+    var tournament: Tournament
 }

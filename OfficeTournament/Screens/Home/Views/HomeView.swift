@@ -24,13 +24,13 @@ struct HomeView: View {
                     TournamentView(viewModel: TournamentViewModel())
                         .containerRelativeFrame(.horizontal)
                     
-                    ProfileView()
+                    ProfileView(viewModel: ProfileViewModel())
                         .containerRelativeFrame(.horizontal)
                 }
                 .scrollTargetLayout()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.clear)
+            .background(Color.General.background)
             .scrollTargetBehavior(.viewAligned)
             .scrollIndicators(.hidden)
             //.ignoresSafeArea(.all)

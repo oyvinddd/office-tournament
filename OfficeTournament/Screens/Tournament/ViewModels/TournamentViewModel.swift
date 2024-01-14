@@ -7,8 +7,9 @@
 
 import Foundation
 
-final class TournamentViewModel: ObservableObject, TournamentServiceInjectable {
+final class TournamentViewModel: ObservableObject, TournamentServiceInjectable, UserServiceInjectable {
     
+    @Published var signedIn: Bool = false
     @Published var tournament: Tournament = Tournament(
         id: UUID(),
         title: "My Tournament",
@@ -29,7 +30,4 @@ final class TournamentViewModel: ObservableObject, TournamentServiceInjectable {
         ],
         createdAt: Date.now
     )
-    
-    func getScoreboard() {
-    }
 }

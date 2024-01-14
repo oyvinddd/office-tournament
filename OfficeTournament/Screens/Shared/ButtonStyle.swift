@@ -19,8 +19,8 @@ struct MainButtonStyle: ButtonStyle {
         }
         
         return configuration.label
-            .padding(.horizontal, 24)
-            .padding(.vertical, 16)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
             .font(Font.App.button)
             .background(backgroundColor)
             .foregroundStyle(Color.white)
