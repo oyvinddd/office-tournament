@@ -18,6 +18,15 @@ import Foundation
                 scoreboard: [],
                 createdAt: Date.now
             )
+        ),
+        Invite(
+            id: UUID(),
+            tournament: Tournament(
+                id: UUID(),
+                title: "New Tournament #2",
+                scoreboard: [],
+                createdAt: Date.now
+            )
         )
     ]
 }

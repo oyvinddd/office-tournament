@@ -24,7 +24,7 @@ struct MainMenuView: View {
             Button(action: cameraButtonTapped) {
                 Image(systemName: "qrcode.viewfinder")
                     .padding(.leading, 24)
-                    .padding(.trailing, 20)
+                    .padding(.trailing, 24)
                     .padding(.vertical, 12)
             }
             .font(Font.App.menuButton)
@@ -40,7 +40,7 @@ struct MainMenuView: View {
             
             Button(action: profileButtonTapped) {
                 Image(systemName: "person.crop.circle")
-                    .padding(.leading, 20)
+                    .padding(.leading, 24)
                     .padding(.trailing, 24)
                     .padding(.vertical, 12)
             }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E2F75B92B545CA100ED79C5 /* CreateTournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */; };
 		8E2F75BB2B545DE400ED79C5 /* CreateTournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */; };
+		8E2F75BD2B54859800ED79C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75BC2B54859800ED79C5 /* AppDelegate.swift */; };
 		8E3B702C2B53EF590036F82C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */; };
 		8E3B702E2B543D110036F82C /* InvitationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702D2B543D110036F82C /* InvitationListView.swift */; };
 		8E3B70302B543E680036F82C /* InvitationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTournamentView.swift; sourceTree = "<group>"; };
 		8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTournamentViewModel.swift; sourceTree = "<group>"; };
+		8E2F75BC2B54859800ED79C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		8E3B702D2B543D110036F82C /* InvitationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationListView.swift; sourceTree = "<group>"; };
 		8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationListViewModel.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				8EECED452B4D988C006AD079 /* Services */,
 				8EECED442B4D9883006AD079 /* Screens */,
 				8EECED362B4D9871006AD079 /* OfficeTournamentApp.swift */,
+				8E2F75BC2B54859800ED79C5 /* AppDelegate.swift */,
 				8EECED3A2B4D9872006AD079 /* Assets.xcassets */,
 				8EECED3C2B4D9872006AD079 /* Preview Content */,
 			);
@@ -372,6 +375,7 @@
 				8E54C8902B5152D700C5E70B /* ProfileView.swift in Sources */,
 				8E2F75B92B545CA100ED79C5 /* CreateTournamentView.swift in Sources */,
 				8E54C8872B514CCA00C5E70B /* UserService.swift in Sources */,
+				8E2F75BD2B54859800ED79C5 /* AppDelegate.swift in Sources */,
 				8E54C8852B51485100C5E70B /* ButtonStyle.swift in Sources */,
 				8EECED492B4D9958006AD079 /* LogInView.swift in Sources */,
 				8EE48C7C2B4EC8E10005FEDD /* ServiceFactory.swift in Sources */,

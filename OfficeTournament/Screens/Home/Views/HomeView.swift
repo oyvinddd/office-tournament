@@ -38,8 +38,7 @@ struct HomeView: View {
             VStack {
                 
                 MainMenuView()
-                    .padding(.horizontal, 32)
-                    .padding(.bottom, 32)
+                    .padding(.bottom, 16)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }

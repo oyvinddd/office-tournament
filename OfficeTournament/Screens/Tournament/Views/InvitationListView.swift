@@ -30,15 +30,32 @@ struct InvitationListView: View {
                 
                 Section {
                     
-                    Button(action: createButtonTapped) {
-                        HStack {
-                            
-                            Text("Create tournament")
-                            
-                            Image(systemName: "plus")
+                    VStack {
+                        
+                        Text("Create Tournament")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(Font.App.heading)
+                            .foregroundStyle(Color.Text.normal)
+                            .padding(.horizontal, 8)
+                        
+                        Text("Lorem ipsum")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(Font.App.textField)
+                            .foregroundStyle(Color.Text.normal)
+                            .padding(.horizontal, 8)
+                     
+                        Button(action: createButtonTapped) {
+                            HStack {
+                                
+                                Text("Create tournament")
+                                
+                                Image(systemName: "plus")
+                            }
                         }
+                        .buttonStyle(MainButtonStyle())
+                        
                     }
-                    .buttonStyle(MainButtonStyle())
+                    .background(Color.white)
                 }
                 .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)

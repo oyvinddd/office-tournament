@@ -9,7 +9,7 @@ import Foundation
 
 final class TournamentViewModel: ObservableObject, TournamentServiceInjectable, UserServiceInjectable {
     
-    @Published var signedIn: Bool = false
+    @Published var signedIn: Bool = true
     @Published var tournament: Tournament = Tournament(
         id: UUID(),
         title: "My Tournament",

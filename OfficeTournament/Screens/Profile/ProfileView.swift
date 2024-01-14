@@ -30,8 +30,20 @@ struct ProfileView: View {
             VStack(spacing: 0) {
                 
                 Button(action: {}) {
-                    Text("Log out")
-                        .frame(maxWidth: .infinity)
+                    
+                    HStack {
+                        
+                        Image(systemName: "hockey.puck")
+                            .foregroundStyle(Color.Text.normal)
+                            .font(Font.App.button)
+                            .padding(.leading, 16)
+                        
+                        Text("Log out")
+                            .foregroundStyle(Color.Text.normal)
+                            .font(Font.App.button)
+                        
+                        Spacer()
+                    }
                 }
             }
             .background(Color.white)

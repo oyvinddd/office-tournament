@@ -20,11 +20,12 @@ struct PlayerRow: View {
                 Text(player.username.lowercased())
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(Font.App.textField)
+                    .foregroundStyle(Color.Text.normal)
                 
                 Text("\(player.score)")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(Font.App.textField)
-                    .foregroundStyle(Color.gray)
+                    .foregroundStyle(Color.Text.subtitle)
             }
             .padding(.leading, 8)
             
