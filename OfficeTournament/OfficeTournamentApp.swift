@@ -12,6 +12,7 @@ import SwiftUI
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
+        
         WindowGroup {
             HomeView()
             //SignInView(viewModel: SignInViewModel())

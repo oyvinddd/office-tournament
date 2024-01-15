@@ -28,15 +28,15 @@ struct ScoreboardModeRow: View {
                     .font(Font.App.buttonSmall)
                     .foregroundStyle(Color.Text.normal)
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 8)
+                    .padding(.vertical, 10)
             }
             
             Button(action: recentMatchesButtonTapped) {
-                Text("Recent matches".uppercased())
+                Text("Invitations".uppercased())
                     .font(Font.App.buttonSmall)
                     .foregroundStyle(Color.Text.normal)
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 8)
+                    .padding(.vertical, 10)
             }
         }
         .frame(maxHeight: .infinity)

@@ -10,6 +10,12 @@ import SwiftUI
 struct PlayerRow: View {
     
     var player: User
+    var placementEmoji: String
+    
+    init(_ player: User, _ emoji: String) {
+        self.player = player
+        self.placementEmoji = emoji
+    }
     
     var body: some View {
         
@@ -28,10 +34,12 @@ struct PlayerRow: View {
                     .foregroundStyle(Color.Text.subtitle)
             }
             .padding(.leading, 16)
+            .padding(.vertical, 8)
             
             Spacer()
             
-            Text("🏆")
+            Text(placementEmoji)
+                .font(Font.App.headingBig)
                 .padding(.trailing, 8)
         }
         .frame(maxHeight: .infinity)
@@ -39,8 +47,4 @@ struct PlayerRow: View {
         .listRowSeparator(.hidden)
         .background(Color.white)
     }
-}
-
-#Preview {
-    PlayerRow(player: User(id: UUID(), username: "oyvindhauge", score: 1800, lastSeen: Date.now))
 }

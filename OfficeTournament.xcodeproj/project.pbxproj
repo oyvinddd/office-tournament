@@ -10,7 +10,8 @@
 		8E2F75B92B545CA100ED79C5 /* CreateTournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */; };
 		8E2F75BB2B545DE400ED79C5 /* CreateTournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */; };
 		8E2F75BD2B54859800ED79C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F75BC2B54859800ED79C5 /* AppDelegate.swift */; };
-		8E3B702C2B53EF590036F82C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */; };
+		8E34B0542B55A574008B004D /* TournamentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E34B0532B55A574008B004D /* TournamentHeaderView.swift */; };
+		8E34B0562B55C0B6008B004D /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E34B0552B55C0B6008B004D /* QRCodeView.swift */; };
 		8E3B702E2B543D110036F82C /* InvitationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702D2B543D110036F82C /* InvitationListView.swift */; };
 		8E3B70302B543E680036F82C /* InvitationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */; };
 		8E3B70322B544A450036F82C /* InviteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70312B544A450036F82C /* InviteRow.swift */; };
@@ -24,9 +25,10 @@
 		8E54C8872B514CCA00C5E70B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8862B514CCA00C5E70B /* UserService.swift */; };
 		8E54C88A2B514D8500C5E70B /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8892B514D8500C5E70B /* SignInViewModel.swift */; };
 		8E54C88D2B51522500C5E70B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C88C2B51522500C5E70B /* HomeView.swift */; };
-		8E54C8902B5152D700C5E70B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C88F2B5152D700C5E70B /* ProfileView.swift */; };
 		8E54C8922B51737F00C5E70B /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8912B51737F00C5E70B /* EmptyView.swift */; };
 		8E54C8952B5177A000C5E70B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8942B5177A000C5E70B /* CameraView.swift */; };
+		8EAAD49A2B55895E00A57099 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAD4992B55895E00A57099 /* QRCodeGenerator.swift */; };
+		8EAAD49C2B55897900A57099 /* QRCodePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAD49B2B55897900A57099 /* QRCodePayload.swift */; };
 		8EC9C7F62B4ED2A000634773 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9C7F52B4ED2A000634773 /* RequestFactory.swift */; };
 		8EE48C7A2B4EC88A0005FEDD /* TournamentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE48C792B4EC88A0005FEDD /* TournamentService.swift */; };
 		8EE48C7C2B4EC8E10005FEDD /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE48C7B2B4EC8E10005FEDD /* ServiceFactory.swift */; };
@@ -43,7 +45,7 @@
 		8EECED532B4DA042006AD079 /* TournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED522B4DA042006AD079 /* TournamentViewModel.swift */; };
 		8EECED582B4DA0C9006AD079 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED572B4DA0C9006AD079 /* User.swift */; };
 		8EECED5A2B4DA12A006AD079 /* TournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED592B4DA12A006AD079 /* TournamentView.swift */; };
-		8EECED5E2B4DA195006AD079 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED5D2B4DA195006AD079 /* HeaderView.swift */; };
+		8EECED5E2B4DA195006AD079 /* PlayerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED5D2B4DA195006AD079 /* PlayerInfoView.swift */; };
 		8EECED602B4DA23C006AD079 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED5F2B4DA23C006AD079 /* PlayerRow.swift */; };
 		8EF32D762B517F56000EB06C /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF32D752B517F56000EB06C /* MainMenuView.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +54,8 @@
 		8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTournamentView.swift; sourceTree = "<group>"; };
 		8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTournamentViewModel.swift; sourceTree = "<group>"; };
 		8E2F75BC2B54859800ED79C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		8E34B0532B55A574008B004D /* TournamentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentHeaderView.swift; sourceTree = "<group>"; };
+		8E34B0552B55C0B6008B004D /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		8E3B702D2B543D110036F82C /* InvitationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationListView.swift; sourceTree = "<group>"; };
 		8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationListViewModel.swift; sourceTree = "<group>"; };
 		8E3B70312B544A450036F82C /* InviteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteRow.swift; sourceTree = "<group>"; };
@@ -66,9 +69,10 @@
 		8E54C8862B514CCA00C5E70B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		8E54C8892B514D8500C5E70B /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		8E54C88C2B51522500C5E70B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		8E54C88F2B5152D700C5E70B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8E54C8912B51737F00C5E70B /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		8E54C8942B5177A000C5E70B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8EAAD4992B55895E00A57099 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		8EAAD49B2B55897900A57099 /* QRCodePayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodePayload.swift; sourceTree = "<group>"; };
 		8EC9C7F52B4ED2A000634773 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		8EE48C792B4EC88A0005FEDD /* TournamentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentService.swift; sourceTree = "<group>"; };
 		8EE48C7B2B4EC8E10005FEDD /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
@@ -86,7 +90,7 @@
 		8EECED522B4DA042006AD079 /* TournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewModel.swift; sourceTree = "<group>"; };
 		8EECED572B4DA0C9006AD079 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8EECED592B4DA12A006AD079 /* TournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentView.swift; sourceTree = "<group>"; };
-		8EECED5D2B4DA195006AD079 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8EECED5D2B4DA195006AD079 /* PlayerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoView.swift; sourceTree = "<group>"; };
 		8EECED5F2B4DA23C006AD079 /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
 		8EF32D752B517F56000EB06C /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,19 +106,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E3B70292B53EF3A0036F82C /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				8E54C88F2B5152D700C5E70B /* ProfileView.swift */,
-				8E3B702B2B53EF590036F82C /* ProfileViewModel.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		8E3B70332B544B290036F82C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				8E3B70342B544B3D0036F82C /* LocalStorageManager.swift */,
+				8EAAD4992B55895E00A57099 /* QRCodeGenerator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -207,7 +203,6 @@
 		8EECED442B4D9883006AD079 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				8E3B70292B53EF3A0036F82C /* Profile */,
 				8E54C88B2B5151F600C5E70B /* Home */,
 				8E54C8832B51484400C5E70B /* Shared */,
 				8E54C8882B514D7700C5E70B /* SignIn */,
@@ -261,6 +256,7 @@
 				8EE48C7D2B4EC99D0005FEDD /* Tournament.swift */,
 				8EE48C7F2B4ECA600005FEDD /* Match.swift */,
 				8E54C87B2B5138C400C5E70B /* Invite.swift */,
+				8EAAD49B2B55897900A57099 /* QRCodePayload.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -268,7 +264,7 @@
 		8EECED5B2B4DA158006AD079 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8EECED5D2B4DA195006AD079 /* HeaderView.swift */,
+				8EECED5D2B4DA195006AD079 /* PlayerInfoView.swift */,
 				8EECED482B4D9958006AD079 /* LogInView.swift */,
 				8EECED5F2B4DA23C006AD079 /* PlayerRow.swift */,
 				8EE4F9D92B519010003135F6 /* ScoreboardModeRow.swift */,
@@ -277,6 +273,8 @@
 				8E3B702D2B543D110036F82C /* InvitationListView.swift */,
 				8E3B70312B544A450036F82C /* InviteRow.swift */,
 				8E2F75B82B545CA100ED79C5 /* CreateTournamentView.swift */,
+				8E34B0532B55A574008B004D /* TournamentHeaderView.swift */,
+				8E34B0552B55C0B6008B004D /* QRCodeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -364,15 +362,14 @@
 			files = (
 				8EC9C7F62B4ED2A000634773 /* RequestFactory.swift in Sources */,
 				8EE48C7E2B4EC99D0005FEDD /* Tournament.swift in Sources */,
-				8E3B702C2B53EF590036F82C /* ProfileViewModel.swift in Sources */,
 				8EE48C7A2B4EC88A0005FEDD /* TournamentService.swift in Sources */,
 				8EECED372B4D9871006AD079 /* OfficeTournamentApp.swift in Sources */,
 				8E54C88A2B514D8500C5E70B /* SignInViewModel.swift in Sources */,
+				8EAAD49C2B55897900A57099 /* QRCodePayload.swift in Sources */,
 				8EECED4C2B4D9BFA006AD079 /* LogInViewModel.swift in Sources */,
 				8E2F75BB2B545DE400ED79C5 /* CreateTournamentViewModel.swift in Sources */,
 				8E3B70372B5451AF0036F82C /* Color+App.swift in Sources */,
 				8EECED5A2B4DA12A006AD079 /* TournamentView.swift in Sources */,
-				8E54C8902B5152D700C5E70B /* ProfileView.swift in Sources */,
 				8E2F75B92B545CA100ED79C5 /* CreateTournamentView.swift in Sources */,
 				8E54C8872B514CCA00C5E70B /* UserService.swift in Sources */,
 				8E2F75BD2B54859800ED79C5 /* AppDelegate.swift in Sources */,
@@ -381,12 +378,14 @@
 				8EE48C7C2B4EC8E10005FEDD /* ServiceFactory.swift in Sources */,
 				8EECED532B4DA042006AD079 /* TournamentViewModel.swift in Sources */,
 				8EE48C802B4ECA600005FEDD /* Match.swift in Sources */,
+				8E34B0562B55C0B6008B004D /* QRCodeView.swift in Sources */,
 				8E54C8922B51737F00C5E70B /* EmptyView.swift in Sources */,
 				8E54C8802B5145A600C5E70B /* SignInView.swift in Sources */,
+				8E34B0542B55A574008B004D /* TournamentHeaderView.swift in Sources */,
 				8E3B70322B544A450036F82C /* InviteRow.swift in Sources */,
 				8E54C87C2B5138C400C5E70B /* Invite.swift in Sources */,
 				8E54C8822B5147FE00C5E70B /* Font+App.swift in Sources */,
-				8EECED5E2B4DA195006AD079 /* HeaderView.swift in Sources */,
+				8EECED5E2B4DA195006AD079 /* PlayerInfoView.swift in Sources */,
 				8EECED582B4DA0C9006AD079 /* User.swift in Sources */,
 				8E54C8952B5177A000C5E70B /* CameraView.swift in Sources */,
 				8EF32D762B517F56000EB06C /* MainMenuView.swift in Sources */,
@@ -398,6 +397,7 @@
 				8E3B702E2B543D110036F82C /* InvitationListView.swift in Sources */,
 				8E54C88D2B51522500C5E70B /* HomeView.swift in Sources */,
 				8EECED512B4D9F7D006AD079 /* ScoreboardView.swift in Sources */,
+				8EAAD49A2B55895E00A57099 /* QRCodeGenerator.swift in Sources */,
 				8E54C87E2B5144B700C5E70B /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

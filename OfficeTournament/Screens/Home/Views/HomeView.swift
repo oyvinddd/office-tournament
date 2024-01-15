@@ -23,9 +23,6 @@ struct HomeView: View {
                     
                     TournamentView(viewModel: TournamentViewModel())
                         .containerRelativeFrame(.horizontal)
-                    
-                    ProfileView(viewModel: ProfileViewModel())
-                        .containerRelativeFrame(.horizontal)
                 }
                 .scrollTargetLayout()
             }

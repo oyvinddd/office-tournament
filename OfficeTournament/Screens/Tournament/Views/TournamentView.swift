@@ -16,8 +16,10 @@ struct TournamentView: View {
         VStack {
             
             if viewModel.signedIn {
+                
+                TournamentHeaderView(title: viewModel.tournament.title, buttonAction: {})
              
-                HeaderView()
+                PlayerInfoView(player: viewModel.userService.user!)
                 
                 ScoreboardView(scoreboard: $viewModel.tournament.scoreboard)
                 

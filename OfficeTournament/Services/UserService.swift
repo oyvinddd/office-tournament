@@ -28,7 +28,7 @@ protocol UserService {
 
 struct LiveUserService: UserService {
     
-    var user: User? = LocalStorageManager.loadUser()
+    var user: User? = User(id: UUID(), username: "oyvinddd", score: 0, lastSeen: Date.now, matchesPlayed: 0, matchesWon: 0)// LocalStorageManager.loadUser()
     
     func signedIn() -> Bool {
         return user?.accessToken != nil
