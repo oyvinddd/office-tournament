@@ -24,7 +24,7 @@ struct ScoreboardView: View {
             Section {
                 
                 ForEach(scoreboard.indices, id: \.self) { index in
-                    PlayerRow(scoreboard[index], emojiFromPlacement(index: index))
+                    PlayerRow(scoreboard[index], emojiFromPlacement(index: index), index == scoreboard.count - 1)
                 }
             }
             .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))

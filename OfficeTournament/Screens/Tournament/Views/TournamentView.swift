@@ -30,6 +30,9 @@ struct TournamentView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.General.background)
+        .onAppear {
+            viewModel.getTournament()
+        }
     }
 }
 

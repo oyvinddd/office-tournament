@@ -10,6 +10,7 @@ import Foundation
 final class TournamentViewModel: ObservableObject, TournamentServiceInjectable, UserServiceInjectable {
     
     @Published var signedIn: Bool = true
+    @Published var scoreboard: [User] = []
     @Published var tournament: Tournament = Tournament(
         id: UUID(),
         title: "My Tournament",
@@ -30,4 +31,17 @@ final class TournamentViewModel: ObservableObject, TournamentServiceInjectable, 
         ],
         createdAt: Date.now
     )
+    
+    func getTournament() {
+        Task {
+            
+            do {
+                let tournament = try await tournamentService.get()
+                scoreboard = tournament.scoreboard.sorted(by: { $0.score > $1.score })
+                
+            } catch let error {
+                print("Error fetching tournament data: \(error)")
+            }
+        }
+    }
 }
