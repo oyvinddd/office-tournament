@@ -52,6 +52,11 @@ final class URLRequestBuilder {
     func build() -> URLRequest {
         var request = URLRequest(url: URL(string: "\(baseUrl)\(endpoint)")!)
         request.httpMethod = method.rawValue
+        if let headers = headers {
+            for (key, value) in headers {
+                request.addValue(key, forHTTPHeaderField: value)
+            }
+        }
         request.httpBody = body
         return request
     }

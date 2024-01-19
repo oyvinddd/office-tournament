@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class TournamentViewModel: ObservableObject, TournamentServiceInjectable, UserServiceInjectable {
+final class TournamentViewModel: ObservableObject, TournamentServiceInjectable, AuthServiceInjectable {
     
     @Published var signedIn: Bool = true
     @Published var scoreboard: [User] = []
@@ -36,7 +36,7 @@ final class TournamentViewModel: ObservableObject, TournamentServiceInjectable, 
         Task {
             
             do {
-                let tournament = try await tournamentService.get()
+                let tournament = try await tournamentService.getTournament()
                 scoreboard = tournament.scoreboard.sorted(by: { $0.score > $1.score })
                 
             } catch let error {

@@ -23,10 +23,12 @@ struct User: Codable, Identifiable {
     
     var matchesWon: Int
     
-    var accessToken: String?
-    
     var winDelta: String {
         guard matchesPlayed > 0 else { return "-" }
         return "\(Float(matchesWon) / Float(matchesPlayed))"
+    }
+    
+    var isIncomplete: Bool {
+        return username.isEmpty
     }
 }

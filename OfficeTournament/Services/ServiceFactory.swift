@@ -13,5 +13,5 @@ final class ServiceFactory {
     
     var tournamentService: TournamentService { return LiveTournamentService() }
     
-    var userServive: UserService { return LiveUserService() }
+    var userServive: AuthService { return LiveUserService() }
 }

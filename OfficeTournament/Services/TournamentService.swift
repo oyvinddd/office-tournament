@@ -23,7 +23,7 @@ protocol TournamentService {
     
     func join(tournamentId: UUID) async throws -> Tournament
     
-    func get() async throws -> Tournament
+    func getTournament() async throws -> Tournament
     
     func leave() async throws
 }
@@ -40,7 +40,7 @@ struct LiveTournamentService: TournamentService {
         return try await APIClient.executeRequest(request)
     }
     
-    func get() async throws -> Tournament {
+    func getTournament() async throws -> Tournament {
         let request = URLRequestBuilder(.get, endpoint: .getTournament).build()
         return try await APIClient.executeRequest(request)
     }

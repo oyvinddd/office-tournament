@@ -19,7 +19,7 @@ struct TournamentView: View {
                 
                 TournamentHeaderView(title: viewModel.tournament.title, buttonAction: {})
              
-                PlayerInfoView(player: viewModel.userService.user!)
+                PlayerInfoView(player: viewModel.authService.user!)
                 
                 ScoreboardView(scoreboard: $viewModel.tournament.scoreboard)
                 

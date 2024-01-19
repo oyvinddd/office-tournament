@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-final class HomeViewModel: ObservableObject, UserServiceInjectable {
+final class HomeViewModel: ObservableObject, AuthServiceInjectable {
     
     @Published var shouldShowSignIn: Bool = false
     
     init() {
-        shouldShowSignIn = !userService.signedIn()
+        shouldShowSignIn = !authService.signedIn()
     }
 }

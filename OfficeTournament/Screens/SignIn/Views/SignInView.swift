@@ -9,14 +9,13 @@ import SwiftUI
 
 struct SignInView: UIViewControllerRepresentable {
 
-    typealias UIViewControllerType = SignInViewController
+    typealias UIViewControllerType = UINavigationController
     
-    func makeUIViewController(context: Context) -> SignInViewController {
-        return SignInViewController()
+    func makeUIViewController(context: Context) -> UINavigationController {
+        return UINavigationController(rootViewController: SignInViewController())
     }
     
-    func updateUIViewController(_ uiViewController: SignInViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
         // do nothing
     }
-    
 }

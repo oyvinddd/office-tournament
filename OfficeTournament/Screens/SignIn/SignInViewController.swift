@@ -37,6 +37,8 @@ final class SignInViewController: UIViewController {
         return authorizationButton
     }()
     
+    var viewModel: SignInViewModel = SignInViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChildViews()
@@ -80,6 +82,14 @@ extension SignInViewController: ASAuthorizationControllerDelegate {
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         
+        guard let credentials = authorization.credential as? ASAuthorizationAppleIDCredential,
+              let token = credentials.identityToken else {
+            return
+        }
+        
+        viewModel.signIn(token: token)
+        
+        /*
         switch authorization.credential {
         case let appleIDCredential as ASAuthorizationAppleIDCredential:
             
@@ -107,8 +117,10 @@ extension SignInViewController: ASAuthorizationControllerDelegate {
              }
              */
         default:
+            print(authorization)
             break
         }
+         */
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {

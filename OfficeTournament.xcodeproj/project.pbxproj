@@ -22,13 +22,14 @@
 		8E54C8802B5145A600C5E70B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C87F2B5145A600C5E70B /* SignInView.swift */; };
 		8E54C8822B5147FE00C5E70B /* Font+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8812B5147FE00C5E70B /* Font+App.swift */; };
 		8E54C8852B51485100C5E70B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8842B51485100C5E70B /* ButtonStyle.swift */; };
-		8E54C8872B514CCA00C5E70B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8862B514CCA00C5E70B /* UserService.swift */; };
+		8E54C8872B514CCA00C5E70B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8862B514CCA00C5E70B /* AuthService.swift */; };
 		8E54C88A2B514D8500C5E70B /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8892B514D8500C5E70B /* SignInViewModel.swift */; };
 		8E54C88D2B51522500C5E70B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C88C2B51522500C5E70B /* HomeView.swift */; };
 		8E54C8922B51737F00C5E70B /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8912B51737F00C5E70B /* EmptyView.swift */; };
 		8E54C8952B5177A000C5E70B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8942B5177A000C5E70B /* CameraView.swift */; };
 		8E681B1A2B59D0DE0067061C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E681B192B59D0DE0067061C /* SignInViewController.swift */; };
 		8E681B202B5A8F2B0067061C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E681B1F2B5A8F2B0067061C /* HomeViewModel.swift */; };
+		8E681B232B5AA2220067061C /* IdentityToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E681B222B5AA2220067061C /* IdentityToken.swift */; };
 		8EAAD49A2B55895E00A57099 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAD4992B55895E00A57099 /* QRCodeGenerator.swift */; };
 		8EAAD49C2B55897900A57099 /* QRCodePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAD49B2B55897900A57099 /* QRCodePayload.swift */; };
 		8EC9C7F62B4ED2A000634773 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9C7F52B4ED2A000634773 /* RequestFactory.swift */; };
@@ -66,13 +67,15 @@
 		8E54C87F2B5145A600C5E70B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		8E54C8812B5147FE00C5E70B /* Font+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+App.swift"; sourceTree = "<group>"; };
 		8E54C8842B51485100C5E70B /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
-		8E54C8862B514CCA00C5E70B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8E54C8862B514CCA00C5E70B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8E54C8892B514D8500C5E70B /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		8E54C88C2B51522500C5E70B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8E54C8912B51737F00C5E70B /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		8E54C8942B5177A000C5E70B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		8E681B192B59D0DE0067061C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8E681B1F2B5A8F2B0067061C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8E681B212B5A9B740067061C /* OfficeTournament.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OfficeTournament.entitlements; sourceTree = "<group>"; };
+		8E681B222B5AA2220067061C /* IdentityToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityToken.swift; sourceTree = "<group>"; };
 		8EAAD4992B55895E00A57099 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		8EAAD49B2B55897900A57099 /* QRCodePayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodePayload.swift; sourceTree = "<group>"; };
 		8EC9C7F52B4ED2A000634773 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
@@ -206,6 +209,7 @@
 		8EECED352B4D9871006AD079 /* OfficeTournament */ = {
 			isa = PBXGroup;
 			children = (
+				8E681B212B5A9B740067061C /* OfficeTournament.entitlements */,
 				8E3B70332B544B290036F82C /* Utils */,
 				8EECED542B4DA081006AD079 /* Entities */,
 				8EECED4D2B4D9C41006AD079 /* Extensions */,
@@ -244,7 +248,7 @@
 				8EC9C7F42B4ED27C00634773 /* Request */,
 				8EE48C792B4EC88A0005FEDD /* TournamentService.swift */,
 				8EE48C7B2B4EC8E10005FEDD /* ServiceFactory.swift */,
-				8E54C8862B514CCA00C5E70B /* UserService.swift */,
+				8E54C8862B514CCA00C5E70B /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -275,6 +279,7 @@
 				8EE48C7F2B4ECA600005FEDD /* Match.swift */,
 				8E54C87B2B5138C400C5E70B /* Invite.swift */,
 				8EAAD49B2B55897900A57099 /* QRCodePayload.swift */,
+				8E681B222B5AA2220067061C /* IdentityToken.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -387,7 +392,7 @@
 				8E3B70372B5451AF0036F82C /* Color+App.swift in Sources */,
 				8EECED5A2B4DA12A006AD079 /* TournamentView.swift in Sources */,
 				8E2F75B92B545CA100ED79C5 /* CreateTournamentView.swift in Sources */,
-				8E54C8872B514CCA00C5E70B /* UserService.swift in Sources */,
+				8E54C8872B514CCA00C5E70B /* AuthService.swift in Sources */,
 				8E2F75BD2B54859800ED79C5 /* AppDelegate.swift in Sources */,
 				8E54C8852B51485100C5E70B /* ButtonStyle.swift in Sources */,
 				8EE48C7C2B4EC8E10005FEDD /* ServiceFactory.swift in Sources */,
@@ -407,6 +412,7 @@
 				8EF32D762B517F56000EB06C /* MainMenuView.swift in Sources */,
 				8E3B70352B544B3D0036F82C /* LocalStorageManager.swift in Sources */,
 				8EECED4F2B4D9E06006AD079 /* UsernameView.swift in Sources */,
+				8E681B232B5AA2220067061C /* IdentityToken.swift in Sources */,
 				8EE4F9DA2B519010003135F6 /* ScoreboardModeRow.swift in Sources */,
 				8E3B70302B543E680036F82C /* InvitationListViewModel.swift in Sources */,
 				8EECED602B4DA23C006AD079 /* PlayerRow.swift in Sources */,
@@ -545,12 +551,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = OfficeTournament/OfficeTournament.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OfficeTournament/Preview Content\"";
-				DEVELOPMENT_TEAM = 2SMFLM66R9;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2SMFLM66R9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Office Tournament";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -565,6 +575,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = no.m31.officetournament;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Office Tournament Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -580,12 +592,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = OfficeTournament/OfficeTournament.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OfficeTournament/Preview Content\"";
-				DEVELOPMENT_TEAM = 2SMFLM66R9;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2SMFLM66R9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Office Tournament";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -600,6 +616,8 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = no.m31.officetournament;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Office Tournament Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

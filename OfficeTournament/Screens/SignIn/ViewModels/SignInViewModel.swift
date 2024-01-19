@@ -7,13 +7,14 @@
 
 import Foundation
 
-@MainActor final class SignInViewModel: ObservableObject, UserServiceInjectable {
+final class SignInViewModel: ObservableObject, AuthServiceInjectable {
     
-    func signInUsingApple() {
+    func signIn(token: Data) {
         
         Task {
             
-            let user = try await userService.signInUsingApple()
+            let identityToken = IdentityToken(token)
+            let user = try await authService.signIn(token: identityToken)
         }
     }
 }
