@@ -1,5 +1,5 @@
 //
-//  WelcomeView.swift
+//  UsernameView.swift
 //  OfficeTournament
 //
 //  Created by Øyvind Hauge on 09/01/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WelcomeView: View {
+struct UsernameView: View {
     
     @State private var username: String = ""
     
@@ -26,8 +26,4 @@ struct WelcomeView: View {
     }
     
     private func createButtonTapped() {}
-}
-
-#Preview {
-    WelcomeView()
 }

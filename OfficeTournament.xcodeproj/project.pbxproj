@@ -27,6 +27,8 @@
 		8E54C88D2B51522500C5E70B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C88C2B51522500C5E70B /* HomeView.swift */; };
 		8E54C8922B51737F00C5E70B /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8912B51737F00C5E70B /* EmptyView.swift */; };
 		8E54C8952B5177A000C5E70B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54C8942B5177A000C5E70B /* CameraView.swift */; };
+		8E681B1A2B59D0DE0067061C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E681B192B59D0DE0067061C /* SignInViewController.swift */; };
+		8E681B202B5A8F2B0067061C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E681B1F2B5A8F2B0067061C /* HomeViewModel.swift */; };
 		8EAAD49A2B55895E00A57099 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAD4992B55895E00A57099 /* QRCodeGenerator.swift */; };
 		8EAAD49C2B55897900A57099 /* QRCodePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAD49B2B55897900A57099 /* QRCodePayload.swift */; };
 		8EC9C7F62B4ED2A000634773 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC9C7F52B4ED2A000634773 /* RequestFactory.swift */; };
@@ -38,9 +40,7 @@
 		8EECED372B4D9871006AD079 /* OfficeTournamentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED362B4D9871006AD079 /* OfficeTournamentApp.swift */; };
 		8EECED3B2B4D9872006AD079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EECED3A2B4D9872006AD079 /* Assets.xcassets */; };
 		8EECED3E2B4D9872006AD079 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EECED3D2B4D9872006AD079 /* Preview Assets.xcassets */; };
-		8EECED492B4D9958006AD079 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED482B4D9958006AD079 /* LogInView.swift */; };
-		8EECED4C2B4D9BFA006AD079 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED4B2B4D9BFA006AD079 /* LogInViewModel.swift */; };
-		8EECED4F2B4D9E06006AD079 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED4E2B4D9E06006AD079 /* WelcomeView.swift */; };
+		8EECED4F2B4D9E06006AD079 /* UsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED4E2B4D9E06006AD079 /* UsernameView.swift */; };
 		8EECED512B4D9F7D006AD079 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED502B4D9F7D006AD079 /* ScoreboardView.swift */; };
 		8EECED532B4DA042006AD079 /* TournamentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED522B4DA042006AD079 /* TournamentViewModel.swift */; };
 		8EECED582B4DA0C9006AD079 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECED572B4DA0C9006AD079 /* User.swift */; };
@@ -71,6 +71,8 @@
 		8E54C88C2B51522500C5E70B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8E54C8912B51737F00C5E70B /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		8E54C8942B5177A000C5E70B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8E681B192B59D0DE0067061C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8E681B1F2B5A8F2B0067061C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8EAAD4992B55895E00A57099 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		8EAAD49B2B55897900A57099 /* QRCodePayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodePayload.swift; sourceTree = "<group>"; };
 		8EC9C7F52B4ED2A000634773 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
@@ -83,9 +85,7 @@
 		8EECED362B4D9871006AD079 /* OfficeTournamentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeTournamentApp.swift; sourceTree = "<group>"; };
 		8EECED3A2B4D9872006AD079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EECED3D2B4D9872006AD079 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8EECED482B4D9958006AD079 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		8EECED4B2B4D9BFA006AD079 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
-		8EECED4E2B4D9E06006AD079 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		8EECED4E2B4D9E06006AD079 /* UsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameView.swift; sourceTree = "<group>"; };
 		8EECED502B4D9F7D006AD079 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		8EECED522B4DA042006AD079 /* TournamentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewModel.swift; sourceTree = "<group>"; };
 		8EECED572B4DA0C9006AD079 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -126,8 +126,9 @@
 		8E54C8882B514D7700C5E70B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				8E54C87F2B5145A600C5E70B /* SignInView.swift */,
-				8E54C8892B514D8500C5E70B /* SignInViewModel.swift */,
+				8E681B1D2B5A8EE00067061C /* Views */,
+				8E681B1C2B5A8ED50067061C /* ViewModels */,
+				8E681B192B59D0DE0067061C /* SignInViewController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -135,6 +136,7 @@
 		8E54C88B2B5151F600C5E70B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8E681B1E2B5A8F190067061C /* ViewModels */,
 				8E54C88E2B5152C600C5E70B /* Views */,
 			);
 			path = Home;
@@ -149,6 +151,31 @@
 				8EF32D752B517F56000EB06C /* MainMenuView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8E681B1C2B5A8ED50067061C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8E54C8892B514D8500C5E70B /* SignInViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8E681B1D2B5A8EE00067061C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E54C87F2B5145A600C5E70B /* SignInView.swift */,
+				8EECED4E2B4D9E06006AD079 /* UsernameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E681B1E2B5A8F190067061C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8E681B1F2B5A8F2B0067061C /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8EC9C7F42B4ED27C00634773 /* Request */ = {
@@ -207,7 +234,6 @@
 				8E54C8832B51484400C5E70B /* Shared */,
 				8E54C8882B514D7700C5E70B /* SignIn */,
 				8EECED472B4D991F006AD079 /* Tournament */,
-				8EECED462B4D98CC006AD079 /* Welcome */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -221,14 +247,6 @@
 				8E54C8862B514CCA00C5E70B /* UserService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		8EECED462B4D98CC006AD079 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				8EECED4E2B4D9E06006AD079 /* WelcomeView.swift */,
-			);
-			path = Welcome;
 			sourceTree = "<group>";
 		};
 		8EECED472B4D991F006AD079 /* Tournament */ = {
@@ -265,7 +283,6 @@
 			isa = PBXGroup;
 			children = (
 				8EECED5D2B4DA195006AD079 /* PlayerInfoView.swift */,
-				8EECED482B4D9958006AD079 /* LogInView.swift */,
 				8EECED5F2B4DA23C006AD079 /* PlayerRow.swift */,
 				8EE4F9D92B519010003135F6 /* ScoreboardModeRow.swift */,
 				8EECED502B4D9F7D006AD079 /* ScoreboardView.swift */,
@@ -283,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				8EECED522B4DA042006AD079 /* TournamentViewModel.swift */,
-				8EECED4B2B4D9BFA006AD079 /* LogInViewModel.swift */,
 				8E3B702F2B543E680036F82C /* InvitationListViewModel.swift */,
 				8E2F75BA2B545DE400ED79C5 /* CreateTournamentViewModel.swift */,
 			);
@@ -363,10 +379,10 @@
 				8EC9C7F62B4ED2A000634773 /* RequestFactory.swift in Sources */,
 				8EE48C7E2B4EC99D0005FEDD /* Tournament.swift in Sources */,
 				8EE48C7A2B4EC88A0005FEDD /* TournamentService.swift in Sources */,
+				8E681B202B5A8F2B0067061C /* HomeViewModel.swift in Sources */,
 				8EECED372B4D9871006AD079 /* OfficeTournamentApp.swift in Sources */,
 				8E54C88A2B514D8500C5E70B /* SignInViewModel.swift in Sources */,
 				8EAAD49C2B55897900A57099 /* QRCodePayload.swift in Sources */,
-				8EECED4C2B4D9BFA006AD079 /* LogInViewModel.swift in Sources */,
 				8E2F75BB2B545DE400ED79C5 /* CreateTournamentViewModel.swift in Sources */,
 				8E3B70372B5451AF0036F82C /* Color+App.swift in Sources */,
 				8EECED5A2B4DA12A006AD079 /* TournamentView.swift in Sources */,
@@ -374,7 +390,6 @@
 				8E54C8872B514CCA00C5E70B /* UserService.swift in Sources */,
 				8E2F75BD2B54859800ED79C5 /* AppDelegate.swift in Sources */,
 				8E54C8852B51485100C5E70B /* ButtonStyle.swift in Sources */,
-				8EECED492B4D9958006AD079 /* LogInView.swift in Sources */,
 				8EE48C7C2B4EC8E10005FEDD /* ServiceFactory.swift in Sources */,
 				8EECED532B4DA042006AD079 /* TournamentViewModel.swift in Sources */,
 				8EE48C802B4ECA600005FEDD /* Match.swift in Sources */,
@@ -388,9 +403,10 @@
 				8EECED5E2B4DA195006AD079 /* PlayerInfoView.swift in Sources */,
 				8EECED582B4DA0C9006AD079 /* User.swift in Sources */,
 				8E54C8952B5177A000C5E70B /* CameraView.swift in Sources */,
+				8E681B1A2B59D0DE0067061C /* SignInViewController.swift in Sources */,
 				8EF32D762B517F56000EB06C /* MainMenuView.swift in Sources */,
 				8E3B70352B544B3D0036F82C /* LocalStorageManager.swift in Sources */,
-				8EECED4F2B4D9E06006AD079 /* WelcomeView.swift in Sources */,
+				8EECED4F2B4D9E06006AD079 /* UsernameView.swift in Sources */,
 				8EE4F9DA2B519010003135F6 /* ScoreboardModeRow.swift in Sources */,
 				8E3B70302B543E680036F82C /* InvitationListViewModel.swift in Sources */,
 				8EECED602B4DA23C006AD079 /* PlayerRow.swift in Sources */,

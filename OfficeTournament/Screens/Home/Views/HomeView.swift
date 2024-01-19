@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @ObservedObject var viewModel: HomeViewModel
+    
     var body: some View {
         
         ZStack {
@@ -39,9 +41,14 @@ struct HomeView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
+        .sheet(isPresented: $viewModel.shouldShowSignIn) {
+            SignInView()
+                .interactiveDismissDisabled(true)
+                .ignoresSafeArea(.all)
+        }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(viewModel: HomeViewModel())
 }
