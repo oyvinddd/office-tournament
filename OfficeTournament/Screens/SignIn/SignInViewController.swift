@@ -9,6 +9,7 @@ import UIKit
 import SwiftUI
 import AuthenticationServices
 
+//https://sarunw.com/posts/sign-in-with-apple-3/
 final class SignInViewController: UIViewController {
     
     private lazy var titleLabel: UILabel = {

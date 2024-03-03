@@ -31,7 +31,7 @@ struct LiveUserService: AuthService {
     var user: User? = User(id: UUID(), username: "oyvinddd", score: 0, lastSeen: Date.now, matchesPlayed: 0, matchesWon: 0)// LocalStorageManager.loadUser()
     
     func signedIn() -> Bool {
-        return false//user?.accessToken != nil
+        return true//user?.accessToken != nil
     }
     
     func signIn(token: IdentityToken) async throws -> User {
